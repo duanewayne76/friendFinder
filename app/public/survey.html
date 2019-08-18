@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="text-center">FriendFinder Survey</h1>
+            <p class="text-center">Take our short survey and see who your most compatible friend is!</p>
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Survey Questions
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Question 1 - I prefer a text over a phone call?
+
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Strongly Disagree</label>
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 2 - One must always pre-wash dishes before loading them into the dishwasher.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>6</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>7</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>8</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>9</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>10</label>
+                        </li>
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 3 - One must always wash or rinse meat before cooking it.
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 4 - The toilet seat must always remain down when not in use.
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 5 - I know ALL the lyrics to "Ice Ice Baby"
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 6 - Milli Vanilli should have continued to tour after they were discovered to only be lip
+                syncing.
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 7 - I prefer dogs over cats.
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 8 - I prefer the beach over the mountains.
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 9 - The 80's were better than the 90's.
+            </div>
+            <br>
+            <div class="card card-body">
+                Question 10 - I love bacon!
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
