@@ -17,7 +17,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="text-center">FriendFinder Survey</h1>
-            <p class="text-center">Take our short survey and see who your most compatible friend is!</p>
+            <p class="text-center">Take our short survey and see who you're most compatible friend is!</p>
         </div>
     </div>
     <form>
@@ -29,11 +29,14 @@
             <label for="lastName">Last Name</label>
             <input type="text" class="form-control" id="lastName">
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email">
+        </div> -->
+        <div class="form-group">
+            <label for="photo">Photo URL</label>
+            <input type="url" class="form-control" id="photoURL">
         </div>
-
         <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
                 aria-expanded="false" aria-controls="collapseExample">
@@ -43,110 +46,271 @@
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
                 Question 1 - I prefer a text over a phone call?
-
+                <br>
                 <form action="">
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5">
                             <label>Strongly agree</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4">
                             <label>Agree</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3">
                             <label>Neutral</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert" value="2">
                             <label>Disagree</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1">
                             <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 2 - One must always pre-wash dishes before loading them into the dishwasher.
+                <br>
                 <form action="">
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>1</label>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>2</label>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>3</label>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
-                            <label>4</label>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>5</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>6</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>7</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>8</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="disagree">
-                            <label>9</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="strong_agree">
-                            <label>10</label>
-                        </li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 3 - One must always wash or rinse meat before cooking it.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 4 - The toilet seat must always remain down when not in use.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 5 - I know ALL the lyrics to "Ice Ice Baby"
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 6 - Milli Vanilli should have continued to tour after they were discovered to only be lip
                 syncing.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 7 - I prefer dogs over cats.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 8 - I prefer the beach over the mountains.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 9 - The 80's were better than the 90's.
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5e">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <div class="card card-body">
                 Question 10 - I love bacon!
+                <form action="">
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="5">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>Strongly Disagree</label>
+                </form>
             </div>
             <br>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <br>
+            <br>
         </div>
 
     </form>
