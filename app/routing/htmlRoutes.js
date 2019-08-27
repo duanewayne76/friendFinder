@@ -17,12 +17,10 @@ module.exports = function(app) {
 
   app.get("/survey.html", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
-    console.log("I'm lost");
   });
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/home.html"));
-    console.log(__dirname);
   });
 };
