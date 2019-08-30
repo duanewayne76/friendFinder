@@ -4,7 +4,7 @@ var friendArray = [
     {
         firstName: "Duane",
         lastName: "Stafford",
-        photoURL: "https://media.licdn.com/dms/image/C4D03AQEWsrD-ctBQ-Q/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=17QzD1m_nu9MrYmHaFfv65ZodzsZLD6C2GZGJCPejKU",
+        photoURL: "https://s3.amazonaws.com/f6s-public/profiles/1538912_original.jpg",
         scores: [
             5,
             1,
