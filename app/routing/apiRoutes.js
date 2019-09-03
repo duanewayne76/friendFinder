@@ -49,8 +49,8 @@ module.exports = function (app) {
         var userData = req.body;
         var userScores = userData.scores;
 
-        console.log("userScores",userScores);
-        console.log("userData", userData);
+        // console.log("userScores",userScores);
+        // console.log("userData", userData);
 
         var totalDifference = 0;
 
@@ -64,13 +64,15 @@ module.exports = function (app) {
                 if (totalDifference <= bestMatch.friendDifference) {
                     bestMatch.firstName = friendsData[i].firstName;
                     bestMatch.lastName = friendsData[i].lastName;
-                    bestMatch.photo = friendsData[i].photo;
+                    console.log(friendsData[i]);
+                    bestMatch.photo = friendsData[i].photoURL;
                     bestMatch.friendDifference = totalDifference;
                 }
             }
         }
 
         friendsData.push(userData);
+        // console.log(bestMatch);
         res.json(bestMatch);
 
     })
